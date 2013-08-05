@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent">
+
+    <Button android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="添加日志"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:gravity="center"
+            android:id="@+id/add_sqlite_log" />
+    <Button android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="清空日志"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:gravity="center"
+            android:id="@+id/clear_sqlite_log" />
+
+</LinearLayout>
+

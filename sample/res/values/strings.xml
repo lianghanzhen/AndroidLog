@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Android Log Sample</string>
+
+    <string name="activity_file_log_writer">Writer/FileLogWriter</string>
+    <string name="activity_sqlite_log_writer">Writer/SQLiteLogWriter</string>
+
+    <string name="activity_file_log_reader">Reader/FileLogReader</string>
+    <string name="activity_sqlite_log_reader">Reader/SQLiteLogReader</string>
+
+</resources>
