@@ -19,9 +19,15 @@ All of the API in AndroidLog is the same as Log, so you can simplely change Log 
 4. write logs to any other persistence storage:
 	> simplely implements the interface *AsyncLog.LogWriter*, then pass the object to *Async* constructor
 	> if you want to read logs, just extends the class *AsyncLog* and override the method *readLogs()*
-	
+
+## How to read logs in persistence storage?
+AndroidLog provides two simple activities to read the logs writen to File(FileLogReaderActivity) or SQLite(SQLiteLogReaderActivity). You can simplely start them.
+If you customize AsyncLog, you can override the method *readLogs()* to read logs.
+
 
 Notes
 =====
 + if using *AsyncLog* or its subclass, you should have only one object in your application as common
 + if using *AsyncLog* or its subclass, you should call the method *quit()* after you quit your application
++ if using *FileLog*, make sure you add the permission of write external storage
++ if using *SQLiteLog*, make sure you add the provider *LogProvider* to your AndroidManifest.xml
